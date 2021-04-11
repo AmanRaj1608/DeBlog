@@ -1,0 +1,30 @@
+{
+  "name": "dblog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext ts --ext tsx"
+  },
+  "dependencies": {
+    "@ethersproject/abstract-signer": "^5.0.14",
+    "@ethersproject/contracts": "^5.0.12",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.1.9",
+    "ethers": "^5.0.32",
+    "next": "10.0.9",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "subscriptions-transport-ws": "^0.9.18"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-typescript-prettier": "^4.2.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8"
+  }
+}

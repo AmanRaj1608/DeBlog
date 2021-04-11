@@ -1,0 +1,33 @@
+{
+    "language": "Solidity",
+    "sources": {
+        "contracts/DBlog.sol": {
+            "content": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.0;\n\ncontract DBlog {\n    // replyTo address(0) for new post, else use txHash\n    event Post(address indexed author, string content, string replyTo);\n    \n    event Like(address indexed author, string postId);\n    event Dislike(address indexed author, string postId);\n\n    function post(string memory content, string memory replyTo) public {\n        emit Post(msg.sender, content, replyTo);\n    }\n\n    function like(string memory postId) public {\n        emit Like(msg.sender, postId);\n    }\n\n    function dislike(string memory postId) public {\n        emit Dislike(msg.sender, postId);\n    }\n}\n"
+        }
+    },
+    "settings": {
+        "optimizer": {
+            "enabled": true,
+            "runs": 200
+        },
+        "outputSelection": {
+            "*": {
+                "*": [
+                    "abi",
+                    "evm.bytecode",
+                    "evm.deployedBytecode",
+                    "evm.methodIdentifiers",
+                    "metadata",
+                    "devdoc",
+                    "userdoc",
+                    "storageLayout",
+                    "evm.gasEstimates"
+                ],
+                "": ["ast"]
+            }
+        },
+        "metadata": {
+            "useLiteralContent": true
+        }
+    }
+}

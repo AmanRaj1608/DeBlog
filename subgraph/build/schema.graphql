@@ -1,0 +1,21 @@
+type Post @entity {
+  id: ID!
+  publishedAtBlock: BigInt!
+  author: Bytes!
+  content: String!
+  replyTo: String!
+  likes: Int!
+  dislikes: Int!
+}
+
+type Like @entity {
+  id: ID!
+  author: Bytes!
+  post: Post!
+}
+
+type Dislike @entity {
+  id: ID!
+  author: Bytes!
+  post: Post!
+}

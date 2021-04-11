@@ -1,0 +1,63 @@
+.postItem {
+  border: solid 1px rgb(218, 217, 217);
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  margin-bottom: 10px;
+  height: 125px;
+
+  &:hover {
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+      0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .main {
+      height: max-content;
+      margin-left: 20px;
+
+      span {
+        font-size: 10px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+
+      p {
+        margin-top: 10px;
+        // font-style: oblique;
+        font-size: 18px;
+      }
+    }
+
+    .rating {
+      padding: 0 20px 0 0;
+
+      button {
+        display: block;
+        background-color: #fff;
+        color: #000;
+        border: none;
+        height: 50%;
+        padding: 0 5px;
+        cursor: pointer;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+          background-color: #e4f6ed;
+        }
+      }
+    }
+  }
+}

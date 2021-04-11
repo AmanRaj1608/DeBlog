@@ -1,0 +1,30 @@
+specVersion: 0.0.2
+description: Decentralized Blog App
+repository: https://github.com/amanraj1608/DeBlog
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: DBlog
+    network: mumbai
+    source:
+      address: '0xbc3b663132e9147067B2F713AEd28BCB0650e811'
+      abi: DBlog
+      startBlock: 12111535
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Post
+      abis:
+        - name: DBlog
+          file: ./abis/DBlog.json
+      eventHandlers:
+        - event: Post(indexed address,string,string)
+          handler: handleNewPost
+        - event: Like(indexed address,string)
+          handler: handleLike
+        - event: Dislike(indexed address,string)
+          handler: handleDislike
+      file: ./src/mapping.ts

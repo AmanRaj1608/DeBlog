@@ -1,0 +1,33 @@
+.login {
+  margin: auto;
+  padding: 20px 70px;
+  flex-grow: 1;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 700px) {
+    padding: 20px;
+  }
+}
+.logo {
+  width: 100px;
+}
+.address {
+  border: 0;
+  height: 35px;
+  padding: 10px;
+  display: flex;
+  outline: none;
+  background: #272343;
+  color: aliceblue;
+  align-items: center;
+  border-radius: 9999px;
+
+  &:hover {
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+      0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  }
+}

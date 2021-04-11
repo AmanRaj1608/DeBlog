@@ -1,0 +1,48 @@
+.container {
+  min-height: 80vh;
+  padding: 25px;
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
+
+  .containerHead {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.btn {
+  background-color: #a7d7c5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #000000;
+
+  &:hover {
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+      0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  }
+}
+
+.singlePost {
+  .by {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+}
