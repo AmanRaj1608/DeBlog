@@ -9,17 +9,21 @@
 
 #### About Project:
 
-Created a completely decentralized blogging app using **The Graph** protocol.
-Using Graph I am fetching live data feed of all activity to instantly update the feed.
-No need for a centralized database needed to track upvotes and replies.
+A completely decentralized blogging app using **Matic**, written with **Typescript, NextJS and Hardhat** using **The Graph** protocol.
+Using Graph to fetch live data feed of all activity, to instantly update the feed.
+No centralized database needed to track upvotes and replies.
 
-Users can connect with their wallets and upload a blog. If that blog is genuine people can upvote and reply. All transaction on MATIC network.
+Features like
+- Creating Blog.
+- Upvote, downvote
+- Reply in threads
+- Live feed upddate
 
 #### Tech Stack
 
-Frontend - TypeScipt, Nextjs, graphql, Apollo
-subgraph - Graph Cli
-Smart Contract - USed hardat + TypeScipt by [solidity-template](https://github.com/paulrberg/solidity-template)
+- Frontend - TypeScipt, Nextjs, graphql, Apollo
+- subgraph - Graph Cli
+- Smart Contract - USed hardat + TypeScipt by [solidity-template](https://github.com/paulrberg/solidity-template)
 
 ---
 
