@@ -6,14 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 
   @media screen and (max-width: 700px) {
     padding: 20px;
   }
 }
 .logo {
-  width: 100px;
+  width: 150px;
 }
 .address {
   border: 0;
